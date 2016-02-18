@@ -1,0 +1,28 @@
+.@{prefix}footer-list{
+  .container();
+  max-width: @jet-cart-container-max-width;
+  text-align: center;
+  @media (min-width: @screen-md-min) {
+    text-align: right;
+  }
+
+  .info {
+    .cost {
+      span {
+        .h3();
+        .text-success();
+      }
+    }
+  }
+
+  .control {
+    .drop {
+      .btn();
+      .btn-default();
+    }
+    .bay {
+      .btn();
+      .btn-success();
+    }
+  }
+}

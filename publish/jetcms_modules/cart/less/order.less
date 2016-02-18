@@ -1,0 +1,47 @@
+.@{prefix}order {
+  .container();
+  max-width: @jet-cart-container-max-width;
+  .errors {
+    .error {
+      .alert();
+      .alert-danger();
+    }
+  }
+
+  h1 {
+    .text-danger();
+    text-align: center;
+  }
+  form {
+    max-width: 400px;
+    margin: auto;
+    .group {
+      .form-group();
+
+      input{
+        .form-control();
+      }
+
+      textarea {
+        .form-control();
+        height: 70px;
+      }
+
+      select {
+        .form-control();
+      }
+    }
+
+    .submit {
+      .form-group();
+      text-align: center;
+      button {
+        .btn();
+        .btn-success();
+        .btn-lg();
+        .btn-block();
+      }
+    }
+
+  }
+}
