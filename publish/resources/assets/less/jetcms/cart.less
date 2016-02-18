@@ -1,7 +1,14 @@
 /* Cart */
-@import "jetcms_modules/cart/less/variables.less";
-@import "jetcms_modules/cart/less/mini_cart.less";
-@import "jetcms_modules/cart/less/head_list.less";
-@import "jetcms_modules/cart/less/list.less";
-@import "jetcms_modules/cart/less/footer_list.less";
-@import "jetcms_modules/cart/less/order.less";
+.jet-cart(@prefix){
+  @import "jetcms_modules/cart/less/variables.less";
+
+  @import "jetcms_modules/cart/less/mini_cart.less";
+  @import "jetcms_modules/cart/less/head_list.less";
+  @import "jetcms_modules/cart/less/list.less";
+  @import "jetcms_modules/cart/less/footer_list.less";
+  @import "jetcms_modules/cart/less/order.less";
+
+  @import "jetcms_modules/cart/less/catalog_list.less";
+}
+
+.jet-cart(jet-cart__);
